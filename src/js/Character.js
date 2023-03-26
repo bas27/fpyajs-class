@@ -9,7 +9,6 @@ export default class Character {
   ];
 
   constructor(name, type, attack, defence) {
-
     if (name.length < 2 || name.length > 10) {
       throw new Error('Length name error');
     } else if (typeof name !== 'string') {
