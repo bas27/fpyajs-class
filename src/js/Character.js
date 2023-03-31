@@ -8,7 +8,7 @@ export default class Character {
     'Zombie',
   ];
 
-  constructor(name, type, attack, defence) {
+  constructor(name, type) {
     if (name.length < 2 || name.length > 10) {
       throw new Error('Length name error');
     } else if (typeof name !== 'string') {
@@ -25,7 +25,7 @@ export default class Character {
 
     this.health = 100;
     this.level = 1;
-    this.attack = attack;
-    this.defence = defence;
+    this.attack = undefined;
+    this.defence = undefined;
   }
 }
